@@ -10,6 +10,7 @@ https://www.electronforge.io/templates/webpack-template
 -- Install current version: https://node.js.org/en/
   - Install via NVM (Node Version Manager) https://github.com/nvm-sh/nvm
 * Download this repo
+* Install git (some of the npm dependecies need it.
 * Run `npm install` to install all dependencies.
 
 ## Game Setup
