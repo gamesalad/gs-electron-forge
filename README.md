@@ -10,11 +10,11 @@ https://www.electronforge.io/templates/webpack-template
 -- Install current version: https://node.js.org/en/
   - Install via NVM (Node Version Manager) https://github.com/nvm-sh/nvm
 * Download this repo
-* Install git (some of the npm dependecies need it.
+* Install git (some of the npm dependecies need it).
 * Run `npm install` to install all dependencies.
 
 ## Game Setup
-You'll need to copy/replace the following directories from your GameSalad HTML5 package. You need to copy the following files into the "static" subdirectory of this project.
+You will need to copy the following files into the "static" subdirectory of this project form your GameSalad HTML5 app bundle:
 
 | GameSalad HTML5 | GS Electron Project | Note                          |
 | --------------- | ------------------- | ----------------------------- |
@@ -23,10 +23,11 @@ You'll need to copy/replace the following directories from your GameSalad HTML5 
 | js/gse          | static/js/gse       | Game Engine                   |
 | css             | src/css             | CSS. Optional since it doesn't change often |
 
-Executable Name. Change "productName" in package.json to the executable name you want.
+
+To change the _Executable Name_. Change _productName_ in package.json to the executable name you want.
 
 ## Delegates
-If you want to customize what your game does on certain events, you can change or add delegates functions in srce/renderer.js
+If you want to customize what your game does on certain events, you can change or add delegates functions in src/renderer.js
 
 To learn about available delegates, take a look here:
 https://help.gamesalad.com/knowledge-base/does-the-html5-engine-have-any-apis-i-can-interact-with/
@@ -37,7 +38,7 @@ If you're looking to test locally, just run `npm start` and it will pop up a des
 ## Create an app
 In package.json there are a number of plugins under config.forge.makers that allow you to generage app pacakges.
 
-If you don't see what you want to add more options.
+If you don't see what you want, you can add more options.
 
 Learn more about your options here: https://www.electronforge.io/config/makers
 
@@ -57,3 +58,6 @@ This will build apps for your current platform.
 Some stores and operating systems want you to sign your app. Here are some tips on signing an electron app.
 
 https://www.electronjs.org/docs/latest/tutorial/code-signing#electron-forge
+
+## License
+Code for this repo is under the MIT License and is separate from the licence for the GameSalad engine.
